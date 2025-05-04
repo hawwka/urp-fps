@@ -1,3 +1,4 @@
+using Content.Scripts;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -27,6 +28,8 @@ public class WeaponHitScan : MonoBehaviour
 
     void Shoot()
     {
+        RecoilManager.Instance.ApplyRecoil();
+        
         muzzleFlash.Play();
         gunAudio.Play();
 
