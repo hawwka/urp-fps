@@ -5,8 +5,9 @@ namespace Content.Scripts
     public class RecoilManager : MonoBehaviour
     {
         public static RecoilManager Instance;
-
-
+        
+        public Vector3 CurrentRotation => currentRotation;
+        
         Vector3 currentRotation;
         Vector3 targetRotation;
         
